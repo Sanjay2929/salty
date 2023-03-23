@@ -35,7 +35,7 @@
 
 
     /* color */
-    --clr-khakhi: #F5F5F5;
+    --clr-khakhi: #FAF8ED;
     --clr-darkblue: #2D3134;
     --clr-orange: #F66F4D;
     --clr-blue: #2E476B;
@@ -74,6 +74,9 @@
 }
 .color_doublelightgray{
     color: var(--clr-doublelightgray);
+}
+.bg_color_khaki {
+    background-color: var(--clr-khakhi);
 }
 /* font weight  */
 .fw_400 {
