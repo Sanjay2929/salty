@@ -75,6 +75,9 @@
 .color_doublelightgray{
     color: var(--clr-doublelightgray);
 }
+.bg_color_khaki {
+    background-color: var(--clr-khakhi);
+}
 /* font weight  */
 .fw_400 {
     font-weight: 400;
