@@ -44,7 +44,7 @@
     --clr-white: #ffffff;
     --clr-lightkhaki:#FAF8ED;
     --clr-doublelightgray:#939597;
-    
+    --clg-darkgray:#676A6C;
 }
 
 /* colors  */
@@ -75,8 +75,14 @@
 .color_doublelightgray{
     color: var(--clr-doublelightgray);
 }
+.color_darkgray{
+    color: var(--clg-darkgray);
+}
 .bg_color_khaki {
     background-color: var(--clr-khakhi);
+}
+.bg_color_white{
+    background-color:var(--clr-white) ;
 }
 /* font weight  */
 .fw_400 {
