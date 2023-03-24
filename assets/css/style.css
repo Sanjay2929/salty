@@ -20,7 +20,7 @@
 }
 
 .lh_86 {
-    line-height: 86px;
+    line-height: 45px;
 }
 
 .hr_sec1 {
@@ -57,7 +57,7 @@
 }
 
 .pad_21_24 {
-    padding: 21px 24px;
+    padding: 13px 19px;
 }
 
 .border_arrow {
@@ -88,23 +88,56 @@
 }
 
 .destinations:hover .radious_90 {
-    border-radius:83% 19% 26% 43% / 30% 17% 46% 38%;
+    border-radius: 83% 19% 26% 43% / 30% 17% 46% 38%;
 }
-.transition_border{
+
+.transition_border {
     transition: all 0.7s linear;
 }
 
+.dubai_img {
+    position: absolute;
+    bottom: 12px;
+    left: 0px;
+}
 
+.underline::after {
+    content: '';
+    position: absolute;
+    background: var(--clr-orange);
+    height: 3px;
+    width: 0px;
+    bottom: 0px;
+    left: 0;
+    transition: all 0.5s linear;
+}
 
+.underline:hover::after {
+    width: 100%;
+}
 
+.underline:hover {
+    color: var(--clr-orange);
+}
 
+.slider_arrow:hover {
+    background-color: var(--clr-darkblue);
+}
 
-
-
-
-
-
-
+.slider_arrow:hover path {
+    stroke: white;
+}
+.book_now:hover{
+    background-color: var(--clr-gray);
+    color: white;
+    border: 1px solid var(--clr-gray);
+}
+.book_now:hover .paper_plane {
+left: 20px;
+}
+.book_now{
+    transition: all 0.3s linear;
+}
 
 
 
@@ -150,14 +183,25 @@
     }
 }
 
-
-@media (min-width:992px) {
-    .pad_19_34 {
-        padding: 15px 34px;
+@media (max-width:992px) and (min-width:768px) {
+    .w_137 {
+        width: 137px;
     }
 
-    .gap_36 {
-        gap: 36px;
+    .dubai_img {
+        position: absolute;
+        bottom: 12px;
+        left: -28px;
+    }
+}
+
+@media (min-width:576px) {
+    .lh_86 {
+        line-height: 60px;
+    }
+
+    .pad_21_24 {
+        padding: 17px 24px;
     }
 }
 
@@ -171,6 +215,28 @@
     }
 
 }
+
+@media (min-width:992px) {
+    .pad_19_34 {
+        padding: 15px 34px;
+    }
+
+    .gap_36 {
+        gap: 36px;
+    }
+
+    .lh_86 {
+        line-height: 86px;
+    }
+
+    .dubai_img {
+        position: absolute;
+        bottom: 12px;
+        left: -62px;
+    }
+}
+
+
 
 @media (min-width:1200px) {
     .max_w_500 {
