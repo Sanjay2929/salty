@@ -42,42 +42,52 @@
     --clr-gray: #5B5F62;
     --clr-lightgray: #9498A4;
     --clr-white: #ffffff;
-    --clr-lightkhaki:#FAF8ED;
-    --clr-doublelightgray:#939597;
-    
+    --clr-lightkhaki: #FAF8ED;
+    --clr-doublelightgray: #939597;
+
 }
 
 /* colors  */
-.color_khaki{
+.color_khaki {
     color: var(--clr-khakhi);
 }
-.color_darkblue{
+
+.color_darkblue {
     color: var(--clr-darkblue);
 }
-.color_orange{
+
+.color_orange {
     color: var(--clr-orange);
 }
-.color_blue{
+
+.color_blue {
     color: var(--clr-blue);
 }
-.color_gray{
+
+.color_gray {
     color: var(--clr-gray);
 }
-.color_lightgray{
+
+.color_lightgray {
     color: var(--clr-lightgray);
 }
-.color_white{
+
+.color_white {
     color: var(--clr-white);
 }
-.color_lightkhakhi{
+
+.color_lightkhakhi {
     color: var(--clr-lightkhaki);
 }
-.color_doublelightgray{
+
+.color_doublelightgray {
     color: var(--clr-doublelightgray);
 }
+
 .bg_color_khaki {
     background-color: var(--clr-khakhi);
 }
+
 /* font weight  */
 .fw_400 {
     font-weight: 400;
@@ -96,52 +106,70 @@
 }
 
 /* font size  */
-.fs_12xl{
-font-size: var(--fs-12xl);
+.fs_12xl {
+    font-size: var(--fs-12xl);
 }
-.fs_11xl{
-font-size: var(--fs-11xl);
+
+.fs_11xl {
+    font-size: var(--fs-11xl);
 }
-.fs_10xl{
-font-size: var(--fs-10xl);
+
+.fs_10xl {
+    font-size: var(--fs-10xl);
 }
-.fs_9xl{
-font-size: var(--fs-9xl);
+
+.fs_9xl {
+    font-size: var(--fs-9xl);
 }
-.fs_8xl{
-font-size: var(--fs-8xl);
+
+.fs_8xl {
+    font-size: var(--fs-8xl);
 }
-.fs_7xl{
-font-size: var(--fs-7xl);
+
+.fs_7xl {
+    font-size: var(--fs-7xl);
 }
-.fs_6xl{
-font-size: var(--fs-6xl);
+
+.fs_6xl {
+    font-size: var(--fs-6xl);
 }
-.fs_5xl{
-font-size: var(--fs-5xl);
+
+.fs_5xl {
+    font-size: var(--fs-5xl);
 }
-.fs_4xl{
-font-size: var(--fs-4xl);
+
+.fs_4xl {
+    font-size: var(--fs-4xl);
 }
-.fs_3xl{
-font-size: var(--fs-3xl);
+
+.fs_3xl {
+    font-size: var(--fs-3xl);
 }
-.fs_2xl{
-font-size: var(--fs-2xl);
+
+.fs_2xl {
+    font-size: var(--fs-2xl);
 }
-.fs_xl{
-font-size: var(--fs-xl);
+
+.fs_xl {
+    font-size: var(--fs-xl);
 }
-.fs_lg{
-font-size: var(--fs-lg);
+
+.fs_lg {
+    font-size: var(--fs-lg);
 }
-.fs_md{
-font-size: var(--fs-md);
+
+.fs_md {
+    font-size: var(--fs-md);
 }
-.fs_sm{
-font-size: var(--fs-sm);
+
+.fs_sm {
+    font-size: var(--fs-sm);
 }
-.fs_xsm{
-font-size: var(--fs-xsm);
+
+.fs_xsm {
+    font-size: var(--fs-xsm);
 }
- 
+
+.bg_darkblue {
+    background-color: var(--clr-darkblue);
+}

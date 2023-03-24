@@ -7,37 +7,240 @@
     <title>Salty</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <!-- custum css -->
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="./assets/css/root.css">
+    <!-- custum css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <!-- SLICK MIN JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- SLICK THEME MIN JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg_khaki">
-    <header class="pt-4">
-        <nav>
+<body class="bg_color_khaki">
+    <header class="pt-4 d-flex min-vh-100 flex-column ">
+        <nav class="">
             <div class="container pt-2">
-                <div class="d-flex align-items-center">
-                    <div class="d-flex me-4 pe-3 align-items-center">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex me-lg-4 pe-3 align-items-center">
                         <img src="./assets/img/png/site_logo.png" alt="logo">
-                        <h2 class="fw_700 fs_3xl ff_sen color_darkblue mb-0">Salty</h2>
+                        <h2 class="fw_700 fs_3xl ff_sen color_darkblue mb-0 ms-1">Salty</h2>
                     </div>
-                    <div class="d-flex justify-content-between w-100 ">
-                        <ul class="d-flex mb-0 gap_36">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Destinations</a></li>
-                            <li><a href="#">Tours</a></li>
-                            <li><a href="#">Blog</a></li>
+                    <div class="menuicon" id="shownav" onclick="shownav()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div id="showul"
+                        class="d-flex justify-content-md-between w-100 align-items-center transition_nav flex-column flex-md-row mobview gap-md-0 gap_36">
+                        <ul class="d-flex mb-0 gap_36 flex-column flex-md-row ps-0 ps-md-4 align-items-center">
+                            <li><a class="fw_400 fs_lg color_blue ff_poppins" href="#">Home</a></li>
+                            <li><a class="fw_400 fs_lg color_blue ff_poppins" href="#">About us</a></li>
+                            <li><a class="fw_400 fs_lg color_blue ff_poppins" href="#">Destinations</a></li>
+                            <li><a class="fw_400 fs_lg color_blue ff_poppins" href="#">Tours</a></li>
+                            <li><a class="fw_400 fs_lg color_blue ff_poppins" href="#">Blog</a></li>
                         </ul>
-                        <button>Book Now</button>
+                        <button class="fw_500 fs_lg ff_poppins color_orange bg_color_khaki pad_19_34 book_now">Book Now
+                            <img src="./assets/img/png/button_img.png" alt="img"></button>
                     </div>
                 </div>
             </div>
         </nav>
+        <section class="d-flex align-items-center flex-grow-1">
+            <div class="container">
+                <div class="row align-items-center justify-content-between flex-wrap-reverse">
+                    <div class="col-lg-6 col-12">
+                        <h2 class="fw_700 fs_12xl color_darkblue ff_sen lh_86 mb-4">Discover the Best Lovely Places</h2>
+                        <p class="fw-400 fs_xl color_gray ff_inter max_w_500 mb-4">Plan and book your perfect trip with
+                            expert advice,
+                            travel tips, destination information and
+                            inspiration from us.</p>
+                        <div
+                            class="d-flex justify-content-between px-3 white_bg_radious mr_neg max_w_500 py_20 align-items-center mt-2">
+                            <div class=" w-50 ps-3">
+                                <h4 class="fw_500 fs_xl ff_inter color_darkblue mb-0">Where</h4>
+                                <div class="d-flex gap-xl-5 gap-lg-3 align-items-center">
+                                    <p class="mb-0 fw_400 fs_sm color_lightgray">Center Point, Lo...</p>
+                                    <img class="hight_13" src="./assets/img/png/location_logo.png" alt="location">
+                                </div>
+                            </div>
+                            <hr class="hr_sec1 px-4 mx-2">
+                            <div class=" w-50">
+                                <h4 class="fw_500 fs_xl ff_inter color_darkblue mb-0">Date</h4>
+                                <div class="d-flex gap-xl-4 gap-lg-3 align-items-center">
+                                    <p class="mb-0 fw_400 fs_sm color_lightgray">09th March,2021</p>
+                                    <img class="hight_13 w_13" src="./assets/img/png/calender-logo.png"
+                                        alt="calender-logo">
+                                </div>
+                            </div>
+                            <img src="./assets/img/png/search.png" alt="search icon">
+                        </div>
+                    </div>
+                    <div class=" col-lg-6 col-12">
+                        <img class="w-100" src="./assets/img/png/sec1_man.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
+    <section class="py-4">
+        <div class="container py-5">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+                <h2 class="fs_11xl fw_600 ff_inter color_darkblue mb-0">Categories</h2>
+                <div class="d-flex gap-3">
+                    <img class="pad_21_24 border_arrow back" src="./assets/img/svg/arrow-black.svg" alt="arrow">
+                    <img class=" pad_21_24 border_arrow  bg_darkblue next" src="./assets/img/png/arrow_2_white.png"
+                        alt="arrow">
+
+                </div>
+            </div>
+            <p class="max_w_370 fw_400 fs_lg ff_inter  color_gray pb-5">Here are lots of interesting destinations to
+                visit, but don’t be confused—they’re already grouped by
+                category.</p>
+            <div class="d-flex pt-2 responsive w-100 justify-content-between">
+                <div class="px-4">
+                    <div class="position-relative destinations">
+                        <img class="radious_90 transition_border w-100" src="./assets/img/png/beach.png" alt="beach">
+                        <a class="position-absolute visite fw_600 fs_3xl color_white ff_inter d-none"
+                            href="#">Visite</a>
+                    </div>
+                    <h4 class="text-center fw_500 fs_6xl mt-3 ff_inter color_darkblue">Beach</h4>
+                </div>
+                <div class="px-4">
+                    <div class="position-relative destinations">
+                        <img class="radious_90 transition_border w-100" src="./assets/img/png/sec2-dessert.png" alt="Desert">
+                        <a class="position-absolute visite fw_600 fs_3xl color_white ff_inter d-none"
+                            href="#">Visite</a>
+                    </div>
+                    <h4 class="text-center fw_500 fs_6xl mt-3 ff_inter color_darkblue">Desert</h4>
+                </div>
+                <div class="px-4">
+                    <div class="position-relative destinations">
+                        <img class="radious_90 transition_border w-100" src="./assets/img/png/mountain.png" alt="Mountain">
+                        <a class="position-absolute visite fw_600 fs_3xl color_white ff_inter d-none"
+                            href="#">Visite</a>
+                    </div>
+                    <h4 class="text-center fw_500 fs_6xl mt-3 ff_inter color_darkblue">Mountain</h4>
+                </div>
+                <div class="px-4">
+                    <div class="position-relative destinations ">
+                        <img class="radious_90 transition_border w-100" src="./assets/img/png/Temple.png" alt="Temple">
+                        <a class="position-absolute visite fw_600 fs_3xl color_white ff_inter d-none"
+                            href="#">Visite</a>
+                    </div>
+                    <h4 class="text-center fw_500 fs_6xl mt-3 ff_inter color_darkblue">Temple</h4>
+                </div>
+                <div class="px-4">
+                    <div class="position-relative destinations">
+                        <img class="radious_90 transition_border w-100" src="./assets/img/png/tower.png" alt="Tower">
+                        <a class="position-absolute visite fw_600 fs_3xl color_white ff_inter d-none"
+                            href="#">Visite</a>
+                    </div>
+                    <h4 class="text-center fw_500 fs_6xl mt-3 ff_inter color_darkblue">Tower</h4>
+                </div>
+                <div class="px-4">
+                    <div class="position-relative destinations">
+                        <img class="radious_90 transition_border w-100" src="./assets/img/png/piramid.png" alt="Pyramid">
+                        <a class="position-absolute visite fw_600 fs_3xl color_white ff_inter d-none"
+                            href="#">Visite</a>
+                    </div>
+                    <h4 class="text-center fw_500 fs_6xl mt-3 ff_inter color_darkblue">Pyramid</h4>
+                </div>
+                <div class="px-4">
+                    <div class="position-relative destinations">
+                        <img class="radious_90 transition_border w-100" src="./assets/img/png/mountain.png" alt="Mountain">
+                        <a class="position-absolute visite fw_600 fs_3xl color_white ff_inter d-none"
+                            href="#">Visite</a>
+                    </div>
+                    <h4 class="text-center fw_500 fs_6xl mt-3 ff_inter color_darkblue">Mountain</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <!--L QUERRY MIN JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--SLICK MIN JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.responsive').slick({
+            dots: false,
+            infinite: true,
+            speed: 1000,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            nextArrow: ".next",
+            prevArrow: ".back",
+            responsive: [
+                {
+                    breakpoint: 1350,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 1,
+
+                        infinite: true,
+
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 580,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 450,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    </script>
+    <script>
+        function shownav() {
+            document.getElementById("showul").classList.toggle("nav_left0")
+        }
+    </script>
 </body>
 
 </html>
