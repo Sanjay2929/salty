@@ -7,7 +7,7 @@
     <title>Salty</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel="shortcut icon" href="./assets/img/png/fav.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/png/fav.png" type="image/x-icon">
     <!-- custum css -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/style1.css">
@@ -59,9 +59,17 @@
                             <li class=""><a class="fw_400 fs_lg color_blue ff_poppins position-relative underline"
                                     href="#">Blog</a></li>
                         </ul>
-                        <button class="fw_500 fs_lg ff_poppins color_orange bg_color_khaki pad_19_34 book_now ">Book Now
-                            <img class="paper_plane position-relative" src="./assets/img/png/button_img.png"
-                                alt="img"></button>
+                        <div class="position-relative overflow- y-hidden btn_book overflow-y-hidden">
+                            <button
+                                class="fw_500 fs_lg ff_poppins color_orange bg_color_khaki pad_19_34 book_now ">Book
+                                Now
+                            </button>
+                            <div class="position-absolute d-flex flex-column gap-5 paper_plane ">
+                                <img class=" " src="./assets/img/png/button_img.png" alt="img">
+                                <img class=" " src="./assets/img/png/button_img.png" alt="img">
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -506,12 +514,14 @@
                     <h2 class="pt-3 m-0 ff_inter fw_600 fs_11xl color_darkblue">A customer said about us:</h2>
                     <div class="d-flex single-item">
                         <div class="bg_color_white px-4 py-4 br_14 mt-4">
-                            <p class="ff_inter fw_400 fs_xl color_gray m-0">Salty helped me a lot in finding the best
+                            <p class="ff_inter fw_400 fs_xl color_gray m-0">Byee Salty helped me a lot in finding the
+                                best
                                 place
                                 for our first outdoor adventure trip.
                                 They responded very quickly and
                                 gave me a detailed account of the place—its history, as well as its best features.</p>
-                            <div class="m-0 text-center text-sm-start pt-4 d-flex justify-content-center justify-content-sm-start">
+                            <div
+                                class="m-0 text-center text-sm-start pt-4 d-flex justify-content-center justify-content-sm-start">
                                 <img src="./assets/images/png/Star_group.png" alt="star group">
                             </div>
                             <div
@@ -542,12 +552,14 @@
                             </div>
                         </div>
                         <div class="bg_color_white px-4 py-4 br_14 mt-4">
-                            <p class="ff_inter fw_400 fs_xl color_gray m-0">Salty helped me a lot in finding the best
+                            <p class="ff_inter fw_400 fs_xl color_gray m-0">Hello Salty helped me a lot in finding the
+                                best
                                 place
                                 for our first outdoor adventure trip.
                                 They responded very quickly and
                                 gave me a detailed account of the place—its history, as well as its best features.</p>
-                            <div class="m-0 text-center text-sm-start pt-4 d-flex justify-content-center justify-content-sm-start">
+                            <div
+                                class="m-0 text-center text-sm-start pt-4 d-flex justify-content-center justify-content-sm-start">
                                 <img src="./assets/images/png/Star_group.png" alt="star group">
                             </div>
                             <div
@@ -578,12 +590,14 @@
                             </div>
                         </div>
                         <div class="bg_color_white px-4 py-4 br_14 mt-4">
-                            <p class="ff_inter fw_400 fs_xl color_gray m-0">Salty helped me a lot in finding the best
+                            <p class="ff_inter fw_400 fs_xl color_gray m-0"> Sanjay Salty helped me a lot in finding the
+                                best
                                 place
                                 for our first outdoor adventure trip.
                                 They responded very quickly and
                                 gave me a detailed account of the place—its history, as well as its best features.</p>
-                            <div class="m-0 text-center text-sm-start pt-4 d-flex justify-content-center justify-content-sm-start">
+                            <div
+                                class="m-0 text-center text-sm-start pt-4 d-flex justify-content-center justify-content-sm-start">
                                 <img src="./assets/images/png/Star_group.png" alt="star group">
                             </div>
                             <div
@@ -861,6 +875,7 @@
         $('.single-item').slick({
             nextArrow: ".next2",
             prevArrow: ".back2",
+            fade: true,
         });
     </script>
     <script>
