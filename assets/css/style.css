@@ -87,10 +87,28 @@
     display: flex !important;
 }
 
-.destinations:hover .radious_90 {
-    border-radius: 83% 19% 26% 43% / 30% 17% 46% 38%;
-}
 
+.radious_90:hover{
+    animation: border_slider 3s linear infinite alternate;
+}
+@keyframes border_slider {
+    0%{
+        border-radius: 90px;
+    }
+    30%{
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+    60%{
+        border-radius: 30% 70% 20% 80% / 76% 4% 96% 24%;
+    }
+    90%{
+        border-radius: 83% 19% 26% 43% / 30% 17% 46% 38%;
+    }
+    100%{
+        border-radius: 90px;
+    }
+
+}
 .transition_border {
     transition: all 0.7s linear;
 }
@@ -229,7 +247,7 @@ transform: scale(1.07);
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:767px) {
     .mobview {
         display: flex;
         flex-direction: column;
