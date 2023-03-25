@@ -127,20 +127,40 @@
 .slider_arrow:hover path {
     stroke: white;
 }
-.book_now:hover{
+
+.book_now:hover {
     background-color: var(--clr-gray);
     color: white;
     border: 1px solid var(--clr-gray);
 }
+
 .book_now:hover .paper_plane {
-left: 20px;
+    left: 20px;
 }
-.book_now{
+
+.book_now {
     transition: all 0.3s linear;
 }
 
+.w_54 {
+    width: 54px;
+}
 
-
+.max_w_500 {
+    max-width: 500px;
+}
+.max_w_230{
+ 
+    max-width: 230px;
+}
+.br_30{
+        border-radius: 30px;
+}
+@media (max-width:476px) {
+    .w_230_xsm{
+        width: 230px;
+    }
+}
 
 @media (max-width:768px) {
     .mobview {
@@ -195,6 +215,8 @@ left: 20px;
     }
 }
 
+
+
 @media (min-width:576px) {
     .lh_86 {
         line-height: 60px;
@@ -238,8 +260,3 @@ left: 20px;
 
 
 
-@media (min-width:1200px) {
-    .max_w_500 {
-        max-width: 500px;
-    }
-}
