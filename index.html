@@ -23,6 +23,13 @@
 </head>
 
 <body class="bg_color_khaki">
+    <button onclick="backToTop()"  id="topbtn" class="position-fixed backToTop border-0 z-3 ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-up-square "
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+        </svg>
+    </button>
     <header class="pt-4 d-flex min-vh-100 flex-column ">
         <nav class="overflow-x-hidden">
             <div class="container pt-2">
@@ -39,15 +46,15 @@
                     <div id="showul"
                         class="d-flex justify-content-md-between w-100 align-items-center transition_nav flex-column flex-md-row mobview gap-md-0 gap_36 z-1">
                         <ul class="d-flex mb-0 gap_36 flex-column flex-md-row ps-0 ps-md-4 align-items-center">
-                            <li class="position-relative"><a class="fw_400 fs_lg color_blue ff_poppins underline"
+                            <li class=""><a class="fw_400 fs_lg color_blue ff_poppins position-relative underline"
                                     href="#">Home</a></li>
-                            <li class="position-relative"><a class="fw_400 fs_lg color_blue ff_poppins underline"
+                            <li class=""><a class="fw_400 fs_lg color_blue ff_poppins position-relative underline"
                                     href="#">About us</a></li>
-                            <li class="position-relative"><a class="fw_400 fs_lg color_blue ff_poppins underline"
+                            <li class=""><a class="fw_400 fs_lg color_blue ff_poppins position-relative underline"
                                     href="#">Destinations</a></li>
-                            <li class="position-relative"><a class="fw_400 fs_lg color_blue ff_poppins underline"
+                            <li class=""><a class="fw_400 fs_lg color_blue ff_poppins position-relative underline"
                                     href="#">Tours</a></li>
-                            <li class="position-relative"><a class="fw_400 fs_lg color_blue ff_poppins underline"
+                            <li class=""><a class="fw_400 fs_lg color_blue ff_poppins position-relative underline"
                                     href="#">Blog</a></li>
                         </ul>
                         <button class="fw_500 fs_lg ff_poppins color_orange bg_color_khaki pad_19_34 book_now ">Book Now
@@ -87,7 +94,8 @@
                             <img src="./assets/img/png/search.png" alt="search icon">
                         </div>
                         <!-- second code -->
-                        <div class="d-flex flex-column d-sm-none flex-sm-row justify-content-center max_w_230 br_30 align-items-center bg_color_white py-4 mx-auto">
+                        <div
+                            class="d-flex flex-column d-sm-none flex-sm-row justify-content-center max_w_230 br_30 align-items-center bg_color_white py-4 mx-auto">
                             <div class="pb-4">
                                 <h4 class="fw_500 fs_xl ff_inter color_darkblue mb-0">Where</h4>
                                 <div class="d-flex gap-5  align-items-center">
@@ -119,7 +127,7 @@
             <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap">
                 <h2 class="fs_11xl fw_600 ff_inter color_darkblue mb-0">Categories</h2>
                 <div class="d-flex gap-3">
-    
+
                     <div class="pad_21_24 border_arrow back slider_arrow"><svg width="8" height="14" viewBox="0 0 8 14"
                             fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7 13L1 7L7 1" stroke="#2D3134" stroke-width="1.5" stroke-linecap="round"
@@ -131,8 +139,8 @@
                             <path d="M1 13L7 7L1 1" stroke="#2D3134" stroke-width="1.5" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg></div>
-    
-    
+
+
                 </div>
             </div>
             <p class="max_w_370 fw_400 fs_lg ff_inter  color_gray pb-5">Here are lots of interesting destinations to
@@ -142,7 +150,8 @@
                 <div class="px-4">
                     <div class="position-relative destinations">
                         <img class="radious_90 transition_border w-100" src="./assets/img/png/beach.png" alt="beach">
-                        <a class="position-absolute visite fw_600 fs_3xl color_white ff_inter d-none" href="#">Visite</a>
+                        <a class="position-absolute visite fw_600 fs_3xl color_white ff_inter d-none"
+                            href="#">Visite</a>
                     </div>
                     <h4 class="text-center fw_500 fs_6xl mt-3 ff_inter color_darkblue">Beach</h4>
                 </div>
@@ -150,42 +159,51 @@
                     <div class="position-relative destinations">
                         <img class="radious_90 transition_border w-100" src="./assets/img/png/sec2-dessert.png"
                             alt="Desert">
-                        <a class="position-absolute visite fw_600 fs_3xl color_white ff_inter d-none" href="#">Visite</a>
+                        <a class="position-absolute visite fw_600 fs_3xl color_white ff_inter d-none"
+                            href="#">Visite</a>
                     </div>
                     <h4 class="text-center fw_500 fs_6xl mt-3 ff_inter color_darkblue">Desert</h4>
                 </div>
                 <div class="px-4">
                     <div class="position-relative destinations">
-                        <img class="radious_90 transition_border w-100" src="./assets/img/png/mountain.png" alt="Mountain">
-                        <a class="position-absolute visite fw_600 fs_3xl color_white ff_inter d-none" href="#">Visite</a>
+                        <img class="radious_90 transition_border w-100" src="./assets/img/png/mountain.png"
+                            alt="Mountain">
+                        <a class="position-absolute visite fw_600 fs_3xl color_white ff_inter d-none"
+                            href="#">Visite</a>
                     </div>
                     <h4 class="text-center fw_500 fs_6xl mt-3 ff_inter color_darkblue">Mountain</h4>
                 </div>
                 <div class="px-4">
                     <div class="position-relative destinations ">
                         <img class="radious_90 transition_border w-100" src="./assets/img/png/Temple.png" alt="Temple">
-                        <a class="position-absolute visite fw_600 fs_3xl color_white ff_inter d-none" href="#">Visite</a>
+                        <a class="position-absolute visite fw_600 fs_3xl color_white ff_inter d-none"
+                            href="#">Visite</a>
                     </div>
                     <h4 class="text-center fw_500 fs_6xl mt-3 ff_inter color_darkblue">Temple</h4>
                 </div>
                 <div class="px-4">
                     <div class="position-relative destinations">
                         <img class="radious_90 transition_border w-100" src="./assets/img/png/tower.png" alt="Tower">
-                        <a class="position-absolute visite fw_600 fs_3xl color_white ff_inter d-none" href="#">Visite</a>
+                        <a class="position-absolute visite fw_600 fs_3xl color_white ff_inter d-none"
+                            href="#">Visite</a>
                     </div>
                     <h4 class="text-center fw_500 fs_6xl mt-3 ff_inter color_darkblue">Tower</h4>
                 </div>
                 <div class="px-4">
                     <div class="position-relative destinations">
-                        <img class="radious_90 transition_border w-100" src="./assets/img/png/piramid.png" alt="Pyramid">
-                        <a class="position-absolute visite fw_600 fs_3xl color_white ff_inter d-none" href="#">Visite</a>
+                        <img class="radious_90 transition_border w-100" src="./assets/img/png/piramid.png"
+                            alt="Pyramid">
+                        <a class="position-absolute visite fw_600 fs_3xl color_white ff_inter d-none"
+                            href="#">Visite</a>
                     </div>
                     <h4 class="text-center fw_500 fs_6xl mt-3 ff_inter color_darkblue">Pyramid</h4>
                 </div>
                 <div class="px-4">
                     <div class="position-relative destinations">
-                        <img class="radious_90 transition_border w-100" src="./assets/img/png/mountain.png" alt="Mountain">
-                        <a class="position-absolute visite fw_600 fs_3xl color_white ff_inter d-none" href="#">Visite</a>
+                        <img class="radious_90 transition_border w-100" src="./assets/img/png/mountain.png"
+                            alt="Mountain">
+                        <a class="position-absolute visite fw_600 fs_3xl color_white ff_inter d-none"
+                            href="#">Visite</a>
                     </div>
                     <h4 class="text-center fw_500 fs_6xl mt-3 ff_inter color_darkblue">Mountain</h4>
                 </div>
@@ -193,8 +211,9 @@
         </div>
     </section>
     <section class="bg_color_khaki overflow-x-hidden">
-        <div class="container ">
-            <!-- Our Experience section  -->
+
+        <!-- Our Experience section  -->
+        <div class="container">
             <div class="py-5 ">
                 <div class="row justify-content-between align-items-lg-end py-5 ">
                     <div class="col-xxl-5 col-md-6  object-fit-cover">
@@ -206,128 +225,146 @@
                                     class="w-100 w_50_sm">
                             </div>
                             <div class="position-absolute bottom_-12 right_-7">
-                                <img src="./assets/images/png/our_exp_5000.png" alt="our experience 5000" class=" w_230_xsm">
+                                <img src="./assets/images/png/our_exp_5000.png" alt="our experience 5000"
+                                    class=" w_230_xsm">
                             </div>
                         </div>
-    
+
                     </div>
                     <div class="col-xl-5 col-md-6">
                         <p class="ff_inter fw_600 fs_3xl color_orange m-0">Our Experience</p>
                         <h2 class="ff_inter fw_600 fs_11xl color_darkblue pt-xl-4 m-0">Our Stories Have Adventures</h2>
-                        <p class="ff_inter fw_400 fs_lg color_gray pt-xl-4 pt-2 mw_467 mb-xl-3 mb-0">We are experienced in bringing
+                        <p class="ff_inter fw_400 fs_lg color_gray pt-xl-4 pt-2 mw_467 mb-xl-3 mb-0">We are experienced
+                            in bringing
                             adventures to stay their journey, with all outdoor destinations in the world as our
                             specialties. Start your adventure now! Nature has already called you!</p>
                         <div class="row">
                             <div class="col-lg-4 col-md-6 col-sm-4 col-6 mt-4">
                                 <div class="bg_color_white px-sm-4 py-sm-4 p-3 br_14">
                                     <p class="ff_inter fw_600 fs_10xl color_orange m-0 ">12K+</p>
-                                    <p class="ff_inter fw_400 fs_4xl color_doublelightgray pt-xl-3 pt-sm-2 pt-2  m-0">Succes Journey</p>
+                                    <p class="ff_inter fw_400 fs_4xl color_doublelightgray pt-xl-3 pt-sm-2 pt-2  m-0">
+                                        Succes Journey</p>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-4 col-6 mt-4">
                                 <div class="bg_color_white px-sm-4 py-sm-4 p-3 br_14">
                                     <p class="ff_inter fw_600 fs_10xl color_orange m-0 ">16+</p>
-                                    <p class="ff_inter fw_400 fs_4xl color_doublelightgray pt-xl-3 pt-sm-2 pt-2  m-0">Awards Winning</p>
+                                    <p class="ff_inter fw_400 fs_4xl color_doublelightgray pt-xl-3 pt-sm-2 pt-2  m-0">
+                                        Awards Winning</p>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-4 col-6 mt-4">
                                 <div class="bg_color_white px-sm-4 py-sm-4 p-3 br_14">
                                     <p class="ff_inter fw_600 fs_10xl color_orange m-0 ">20+</p>
-                                    <p class="ff_inter fw_400 fs_4xl color_doublelightgray pt-xl-3 pt-sm-2 pt-2  m-0">Years Of
+                                    <p class="ff_inter fw_400 fs_4xl color_doublelightgray pt-xl-3 pt-sm-2 pt-2  m-0">
+                                        Years Of
                                         Experience</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-    
+
                 </div>
             </div>
-            <!-- Find Popular Destination section  -->
-            <div class="py-5">
+        </div>
+        <!-- Find Popular Destination section  -->
+        <div class="py-5">
+            <div class="container">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-xl-4 col-md-7 col-sm-9 col-7">
                         <h2 class="ff_inter fw_600 fs_11xl color_darkblue">Find Popular Destination</h2>
                     </div>
                     <div class="col-sm-3 col-5 ">
-                        <div class="text-end">
-                            <img src="./assets/images/png/arrpw_left_about_us.png" alt="arrow left" class="pe-sm-4 back1">
-                            <img src="./assets/images/png/arrow_right_about_us.png " alt=" arrow right" class="next1">
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex responsive2 h-100">
-                    <div class="mx-3">
-                        <div class="bg_color_khaki border_white br_16  px-3 py-3 m-0 ">
-                            <img src="./assets/images/png/destination_slide_1.png" alt="destination slide 1" class="w-100">
-                            <h4 class="pt-4 m-0 ff_inter fw_600 fs_5xl color_darkblue">Mountain Hiking Tour</h4>
-                            <p class=" ff_inter fw_400 fs_md color_gray pt-3 m-0">Mountain Hiking Tour</p>
-                            <div class="d-flex justify-content-between align-items-center pt-5 pb-2 m-0">
-                                <p class="ff_inter fw_400 fs_md color_gray"><b
-                                        class="ff_inter fw_600 fs_5xl color_darkblue">$89</b> /Person</p>
-                                <button
-                                    class="ff_poppins fw_400 fs_md color_darkblue border-0 bg_color_khaki border_button_top_des br_30 px-sm-3 py-sm-2 px-2 m-0 color_hover text-center">
-                                    Book Now
-                                </button>
+                        <div class=" d-flex gap-3 justify-content-end">
+                            <div class="pad_21_24 border_arrow back1 slider_arrow"><svg width="8" height="14"
+                                    viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 13L1 7L7 1" stroke="#2D3134" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
                             </div>
-                        </div>
-                    </div>
-                    <div class="mx-3">
-                        <div class="bg_color_khaki border_white br_16  px-3 py-3 m-0 ">
-                            <img src="./assets/images/png/destination_slide_2.png" alt="destination slide 2" class="w-100">
-                            <h4 class="pt-4 m-0 ff_inter fw_600 fs_5xl color_darkblue">Machu Picchu, Peru</h4>
-                            <p class=" ff_inter fw_400 fs_md color_gray pt-3 m-0">Machu Picchu, Peru</p>
-                            <div class="d-flex justify-content-between align-items-center pt-5 pb-2 m-0">
-                                <p class="ff_inter fw_400 fs_md color_gray"><b
-                                        class="ff_inter fw_600 fs_5xl color_darkblue">$99</b> /Person
-                                </p>
-                                <button
-                                    class="ff_poppins fw_400 fs_md color_darkblue border-0 bg_color_khaki border_button_top_des br_30 px-sm-3 py-sm-2 px-2 m-0 color_hover text-center">
-                                    Book Now
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mx-3">
-                        <div class="bg_color_khaki border_white br_16  px-3 py-3 m-0 ">
-                            <img src="./assets/images/png/destination_slide_3.png" alt="destination slide 3" class="w-100">
-                            <h4 class="pt-4 m-0 ff_inter fw_600 fs_5xl color_darkblue">The Grand Canyon, Arizona</h4>
-                            <p class=" ff_inter fw_400 fs_md color_gray pt-3 m-0">Mountain Hiking Tour</p>
-                            <div class="d-flex justify-content-between align-items-center pt-5 pt-lg-5 pt-md-3 pb-2 m-0">
-                                <p class="ff_inter fw_400 fs_md color_gray pt-md-1 pt-lg-0"><b
-                                        class="ff_inter fw_600 fs_5xl color_darkblue">$70</b> /Person
-                                </p>
-                                <button
-                                    class="ff_poppins fw_400 fs_md color_darkblue border-0 bg_color_khaki border_button_top_des br_30 px-sm-3 py-sm-2 px-2 m-0 color_hover text-center">
-                                    Book Now
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mx-3">
-                        <div class="bg_color_khaki border_white br_16  px-3 py-3 m-0 ">
-                            <img src="./assets/images/png/destination_slide_4.png" alt="destination slide 4" class="w-100">
-                            <h4 class="pt-4 m-0 ff_inter fw_600 fs_5xl color_darkblue">Rome, Italy</h4>
-                            <p class=" ff_inter fw_400 fs_md color_gray pt-3 m-0">Mountain Hiking Tour</p>
-                            <div class="d-flex justify-content-between align-items-center pt-5 pb-2 m-0">
-                                <p class="ff_inter fw_400 fs_md color_gray"><b
-                                        class="ff_inter fw_600 fs_5xl color_darkblue">$99</b> /Person
-                                </p>
-                                <button
-                                    class="ff_poppins fw_400 fs_md color_darkblue border-0 bg_color_khaki border_button_top_des br_30 px-sm-3 py-sm-2 px-2 m-0 color_hover text-center">
-                                    Book Now
-                                </button>
-                            </div>
+                            <div class="next1 pad_21_24 border_arrow slider_arrow"><svg width="8" height="14"
+                                    viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 13L7 7L1 1" stroke="#2D3134" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Top Destinations section  -->
+            <div class="d-flex responsive2 h-100 ms-auto mw w-100">
+                <div class="mx-3">
+                    <div class="bg_color_khaki border_white br_16  px-3 py-3 m-0 ">
+                        <img src="./assets/images/png/destination_slide_1.png" alt="destination slide 1" class="w-100">
+                        <h4 class="pt-4 m-0 ff_inter fw_600 fs_5xl color_darkblue">Mountain Hiking Tour</h4>
+                        <p class=" ff_inter fw_400 fs_md color_gray pt-3 m-0">Mountain Hiking Tour</p>
+                        <div class="d-flex justify-content-between align-items-center pt-5 pb-2 m-0">
+                            <p class="ff_inter fw_400 fs_md color_gray"><b
+                                    class="ff_inter fw_600 fs_5xl color_darkblue">$89</b> /Person</p>
+                            <button
+                                class="ff_poppins fw_400 fs_md color_darkblue border-0 bg_color_khaki border_button_top_des br_30 px-sm-3 py-sm-2 px-2 m-0 color_hover text-center">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-3">
+                    <div class="bg_color_khaki border_white br_16  px-3 py-3 m-0 ">
+                        <img src="./assets/images/png/destination_slide_2.png" alt="destination slide 2" class="w-100">
+                        <h4 class="pt-4 m-0 ff_inter fw_600 fs_5xl color_darkblue">Machu Picchu, Peru</h4>
+                        <p class=" ff_inter fw_400 fs_md color_gray pt-3 m-0">Machu Picchu, Peru</p>
+                        <div class="d-flex justify-content-between align-items-center pt-5 pb-2 m-0">
+                            <p class="ff_inter fw_400 fs_md color_gray"><b
+                                    class="ff_inter fw_600 fs_5xl color_darkblue">$99</b> /Person
+                            </p>
+                            <button
+                                class="ff_poppins fw_400 fs_md color_darkblue border-0 bg_color_khaki border_button_top_des br_30 px-sm-3 py-sm-2 px-2 m-0 color_hover text-center">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-3">
+                    <div class="bg_color_khaki border_white br_16  px-3 py-3 m-0 ">
+                        <img src="./assets/images/png/destination_slide_3.png" alt="destination slide 3" class="w-100">
+                        <h4 class="pt-4 m-0 ff_inter fw_600 fs_5xl color_darkblue">The Grand Canyon, Arizona</h4>
+                        <p class=" ff_inter fw_400 fs_md color_gray pt-3 m-0">Mountain Hiking Tour</p>
+                        <div class="d-flex justify-content-between align-items-center pt-5 pt-lg-5 pt-md-3 pb-2 m-0">
+                            <p class="ff_inter fw_400 fs_md color_gray pt-md-1 pt-lg-0"><b
+                                    class="ff_inter fw_600 fs_5xl color_darkblue">$70</b> /Person
+                            </p>
+                            <button
+                                class="ff_poppins fw_400 fs_md color_darkblue border-0 bg_color_khaki border_button_top_des br_30 px-sm-3 py-sm-2 px-2 m-0 color_hover text-center">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-3">
+                    <div class="bg_color_khaki border_white br_16  px-3 py-3 m-0 ">
+                        <img src="./assets/images/png/destination_slide_4.png" alt="destination slide 4" class="w-100">
+                        <h4 class="pt-4 m-0 ff_inter fw_600 fs_5xl color_darkblue">Rome, Italy</h4>
+                        <p class=" ff_inter fw_400 fs_md color_gray pt-3 m-0">Mountain Hiking Tour</p>
+                        <div class="d-flex justify-content-between align-items-center pt-5 pb-2 m-0">
+                            <p class="ff_inter fw_400 fs_md color_gray"><b
+                                    class="ff_inter fw_600 fs_5xl color_darkblue">$99</b> /Person
+                            </p>
+                            <button
+                                class="ff_poppins fw_400 fs_md color_darkblue border-0 bg_color_khaki border_button_top_des br_30 px-sm-3 py-sm-2 px-2 m-0 color_hover text-center">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Destinations section  -->
+        <div class="container">
             <h2 class="ff_inter fw_600 text-center fs_11xl color_darkblue pt-5 m-0">Top Destinations</h2>
             <p class="ff_inter fw_400 fs_lg color_gray text-center pt-3 m-0">Sost Brilliant reasons Entrada should be
                 your one-stop-shop!</p>
             <div class="mw_650 ms-auto me-auto text-center">
                 <div class="row justify-content-between pt-4 pb-5">
-    
+
                     <div class="col-lg-2 col-4 m-0">
                         <button
                             class="ff_poppins fw_400 fs_md color_darkblue border-0 bg_color_khaki border_button_top_des br_30 px-sm-4 py-sm-2 px-3 m-0 color_hover text-center">London</button>
@@ -348,14 +385,14 @@
                         <button
                             class="ff_poppins fw_400 fs_md color_darkblue border-0 bg_color_khaki border_button_top_des br_30 px-sm-4 py-sm-2 px-3 m-0 color_hover text-center mt-3 m-lg-0">Italy</button>
                     </div>
-    
+
                 </div>
             </div>
             <div class="d_grid pb-5">
                 <div class="griditem1">
                     <div class="position-relative h-100">
                         <img src="./assets/images/png/grid_img_1.png" alt="grid image 1" class="w-100 griditem">
-    
+
                         <div class="position-absolute left_20 top_20">
                             <button
                                 class="ff_inter fw_500 fs_md color_darkblue bg_color_white px-2 br_12 py-1 color_hover border-0">3.5</button>
@@ -369,7 +406,7 @@
                 <div class="griditem2">
                     <div class="position-relative h-100">
                         <img src="./assets/images/png/grid_img_2.png" alt="grid image 2 " class="w-100 griditem">
-    
+
                         <div class="position-absolute left_20 top_20">
                             <button
                                 class="ff_inter fw_500 fs_md color_darkblue bg_color_white px-2 br_12 py-1 color_hover border-0">3.5</button>
@@ -379,12 +416,12 @@
                             <p class="ff_inter fw_400 fs_md pt-2 m-0"><a href="#" class="color_white">Worefall</a></p>
                         </div>
                     </div>
-    
+
                 </div>
                 <div class="griditem3">
                     <div class="position-relative h-100">
                         <img src="./assets/images/png/grid_img_3.png" alt="grid image 3" class="w-100 griditem">
-    
+
                         <div class="position-absolute left_20 top_20">
                             <button
                                 class="ff_inter fw_500 fs_md color_darkblue bg_color_white px-2 br_12 py-1 color_hover border-0">3.5</button>
@@ -394,12 +431,12 @@
                             <p class="ff_inter fw_400 fs_md pt-2 m-0"><a href="#" class="color_white">Worefall</a></p>
                         </div>
                     </div>
-    
+
                 </div>
                 <div class="griditem4">
                     <div class="position-relative h-100">
                         <img src="./assets/images/png/grid_img_4.png" alt="grid image 4" class="w-100 griditem">
-    
+
                         <div class="position-absolute left_20 top_20">
                             <button
                                 class="ff_inter fw_500 fs_md color_darkblue bg_color_white px-2 br_12 py-1 color_hover border-0">3.5</button>
@@ -409,13 +446,13 @@
                             <p class="ff_inter fw_400 fs_md pt-2 m-0"><a href="#" class="color_white">Worefall</a></p>
                         </div>
                     </div>
-    
-    
+
+
                 </div>
                 <div class="griditem5">
                     <div class="position-relative h-100">
                         <img src="./assets/images/png/grid_img_5.png" alt="grid image 5" class="w-100 griditem">
-    
+
                         <div class="position-absolute left_20 top_20">
                             <button
                                 class="ff_inter fw_500 fs_md color_darkblue bg_color_white px-2 br_12 py-1 color_hover border-0">3.5</button>
@@ -425,12 +462,12 @@
                             <p class="ff_inter fw_400 fs_md pt-2 m-0"><a href="#" class="color_white">Worefall</a></p>
                         </div>
                     </div>
-    
+
                 </div>
                 <div class="griditem6">
                     <div class="position-relative h-100">
                         <img src="./assets/images/png/grid_img_6.png" alt="grid image 6" class="w-100 griditem">
-    
+
                         <div class="position-absolute left_20 top_20">
                             <button
                                 class="ff_inter fw_500 fs_md color_darkblue bg_color_white px-2 br_12 py-1 color_hover border-0">3.5</button>
@@ -440,51 +477,137 @@
                             <p class="ff_inter fw_400 fs_md pt-2 m-0"><a href="#" class="color_white">Worefall</a></p>
                         </div>
                     </div>
-    
+
                 </div>
-    
+
             </div>
-            <!-- about us section  -->
-    
+        </div>
+        <!-- about us section  -->
+        <div class="container">
             <div class="row justify-content-between align-items-center px-5 py-5">
                 <div class="col-lg-5 ms-lg-5 pe-lg-5 py-5 ">
-                    <img src="./assets/images/png/about_us_section_image.png" alt="abut us section image" class="w-100 ">
+                    <img src="./assets/images/png/about_us_section_image.png" alt="abut us section image"
+                        class="w-100 ">
                 </div>
                 <div class="col-lg-5 py-5">
                     <img src="./assets/images/png/about_us_hr.png" alt="yellow bar">
                     <h2 class="pt-3 m-0 ff_inter fw_600 fs_11xl color_darkblue">A customer said about us:</h2>
-                    <div class="bg_color_white px-4 py-4 br_14 mt-4">
-                        <p class="ff_inter fw_400 fs_xl color_gray m-0">Salty helped me a lot in finding the best
-                            place
-                            for our first outdoor adventure trip.
-                            They responded very quickly and
-                            gave me a detailed account of the place—its history, as well as its best features.</p>
-                        <div class="m-0 text-center text-sm-start pt-4">
-                            <img src="./assets/images/png/Star_group.png" alt="star group">
+                    <div class="d-flex single-item">
+                        <div class="bg_color_white px-4 py-4 br_14 mt-4">
+                            <p class="ff_inter fw_400 fs_xl color_gray m-0">Salty helped me a lot in finding the best
+                                place
+                                for our first outdoor adventure trip.
+                                They responded very quickly and
+                                gave me a detailed account of the place—its history, as well as its best features.</p>
+                            <div class="m-0 text-center text-sm-start pt-4">
+                                <img src="./assets/images/png/Star_group.png" alt="star group">
+                            </div>
+                            <div
+                                class="d-flex justify-content-between pt-3 align-content-center flex-sm-row flex-column align-items-center">
+                                <div class="m-0">
+                                    <p class="m-0 ff_inter fw_500 fs_3xl color_darkblue text-center text-sm-start">
+                                        Andrew
+                                        Sarma
+                                    </p>
+                                    <p class="m-0 ff_inter fw_400 fs_sm pt-2 color_gray text-center text-sm-start">
+                                        Enterpreneur
+                                    </p>
+                                </div>
+                                <div class=" d-flex gap-3 justify-content-end">
+                                    <div class="pad_21_24 back2 border_arrow slider_arrow"><svg width="8" height="14"
+                                            viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7 13L1 7L7 1" stroke="#2D3134" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class=" pad_21_24 next2 border_arrow slider_arrow"><svg width="8" height="14"
+                                            viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 13L7 7L1 1" stroke="#2D3134" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></div>
+                                </div>
+
+                            </div>
                         </div>
-                        <div
-                            class="d-flex justify-content-between pt-3 align-content-center flex-sm-row flex-column align-items-center">
-                            <div class="m-0">
-                                <p class="m-0 ff_inter fw_500 fs_3xl color_darkblue text-center text-sm-start">Andrew
-                                    Sarma
-                                </p>
-                                <p class="m-0 ff_inter fw_400 fs_sm pt-2 color_gray text-center text-sm-start">
-                                    Enterpreneur
-                                </p>
+                        <div class="bg_color_white px-4 py-4 br_14 mt-4">
+                            <p class="ff_inter fw_400 fs_xl color_gray m-0">Salty helped me a lot in finding the best
+                                place
+                                for our first outdoor adventure trip.
+                                They responded very quickly and
+                                gave me a detailed account of the place—its history, as well as its best features.</p>
+                            <div class="m-0 text-center text-sm-start pt-4">
+                                <img src="./assets/images/png/Star_group.png" alt="star group">
                             </div>
-                            <div class="d-flex pt-sm-0 pt-4 me-sm-0 me-auto ms-sm-0 ms-auto">
-                                <a href="#"><img src="./assets/images/png/arrpw_left_about_us.png" alt="arrow left"
-                                        class="pe-3 object-fit-contain"></a>
-                                <a href="#"><img src="./assets/images/png/arrow_right_about_us.png" alt="arrow right"
-                                        class="object-fit-contain"></a>
+                            <div
+                                class="d-flex justify-content-between pt-3 align-content-center flex-sm-row flex-column align-items-center">
+                                <div class="m-0">
+                                    <p class="m-0 ff_inter fw_500 fs_3xl color_darkblue text-center text-sm-start">
+                                        Andrew
+                                        Sarma
+                                    </p>
+                                    <p class="m-0 ff_inter fw_400 fs_sm pt-2 color_gray text-center text-sm-start">
+                                        Enterpreneur
+                                    </p>
+                                </div>
+                                <div class=" d-flex gap-3 justify-content-end">
+                                    <div class="pad_21_24 back2 border_arrow slider_arrow"><svg width="8" height="14"
+                                            viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7 13L1 7L7 1" stroke="#2D3134" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class=" pad_21_24 next2 border_arrow slider_arrow"><svg width="8" height="14"
+                                            viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 13L7 7L1 1" stroke="#2D3134" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></div>
+                                </div>
+
                             </div>
-    
+                        </div>
+                        <div class="bg_color_white px-4 py-4 br_14 mt-4">
+                            <p class="ff_inter fw_400 fs_xl color_gray m-0">Salty helped me a lot in finding the best
+                                place
+                                for our first outdoor adventure trip.
+                                They responded very quickly and
+                                gave me a detailed account of the place—its history, as well as its best features.</p>
+                            <div class="m-0 text-center text-sm-start pt-4">
+                                <img src="./assets/images/png/Star_group.png" alt="star group">
+                            </div>
+                            <div
+                                class="d-flex justify-content-between pt-3 align-content-center flex-sm-row flex-column align-items-center">
+                                <div class="m-0">
+                                    <p class="m-0 ff_inter fw_500 fs_3xl color_darkblue text-center text-sm-start">
+                                        Andrew
+                                        Sarma
+                                    </p>
+                                    <p class="m-0 ff_inter fw_400 fs_sm pt-2 color_gray text-center text-sm-start">
+                                        Enterpreneur
+                                    </p>
+                                </div>
+                                <div class=" d-flex gap-3 justify-content-end">
+                                    <div class="pad_21_24 back2 border_arrow slider_arrow"><svg width="8" height="14"
+                                            viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7 13L1 7L7 1" stroke="#2D3134" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div class=" pad_21_24 next2 border_arrow slider_arrow"><svg width="8" height="14"
+                                            viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 13L7 7L1 1" stroke="#2D3134" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
-    
+
             </div>
-            <!-- newsletter section  -->
+        </div>
+        <!-- newsletter section  -->
+        <div class="container">
             <div class="bg_newsletter br_30 my-5">
                 <div class="row justify-content-center">
                     <div class="col-11">
@@ -496,17 +619,19 @@
                                 <div class="d-flex justify-content-between align-items-center">
                                     <input type="email" placeholder="Enter Your email address"
                                         class="ff_inter fw_400 fs_md color_gray opacity_04 m-0 px-lg-4 py-lg-4  ms-1 border-0 outline_none">
-    
+
                                     <a href="#"><img src="./assets/images/png/send_icon.png" alt="send icon"
                                             class="px-2 pt-2"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-    
+
                 </div>
             </div>
-            <!-- footer section -->
+        </div>
+        <!-- footer section -->
+        <div class="container">
             <div class="py-5">
                 <div class="row justify-content-between">
                     <div class="col-lg-2 col-12">
@@ -518,7 +643,8 @@
                         <div class="d-flex pt-3">
                             <a href="#"><img src="./assets/images/png/fb_icon.png" alt="fb icon"></a>
                             <a href="#"><img src="./assets/images/png/insta_logo.png" alt="insta logo" class="ps-3"></a>
-                            <a href="#"><img src="./assets/images/png/twitter_logo.png" alt="twitter logo" class="ps-3"></a>
+                            <a href="#"><img src="./assets/images/png/twitter_logo.png" alt="twitter logo"
+                                    class="ps-3"></a>
                         </div>
                     </div>
                     <div class="col-lg-8 col-12 pt-lg-0 pt-4">
@@ -527,16 +653,16 @@
                                 <ul class="p-0">
                                     <li class=" ff_inter fw_500 fs_xl color_darkblue m-0">Resources</li>
                                     <li class=" ff_inter fw_400 fs_md  pt-4"><a href="#"
-                                            class="color_darkgray underline">Download</a>
+                                            class="color_darkgray position-relative underline">Download</a>
                                     </li>
                                     <li class=" ff_inter fw_400 fs_md  pt-3"><a href="#"
-                                            class="color_darkgray underline">Help
+                                            class="color_darkgray position-relative underline">Help
                                             Center</a></li>
                                     <li class=" ff_inter fw_400 fs_md  pt-3"><a href="#"
-                                            class="color_darkgray underline">Guide
+                                            class="color_darkgray position-relative underline">Guide
                                             Book</a></li>
                                     <li class=" ff_inter fw_400 fs_md  pt-3"><a href="#"
-                                            class="color_darkgray underline">App
+                                            class="color_darkgray position-relative underline">App
                                             Directory</a></li>
                                 </ul>
                             </div>
@@ -544,15 +670,15 @@
                                 <ul class="p-0">
                                     <li class=" ff_inter fw_500 fs_xl color_darkblue m-0">Travellers</li>
                                     <li class=" ff_inter fw_400 fs_md  pt-4"><a href="#"
-                                            class="color_darkgray underline">Why
+                                            class="color_darkgray position-relative underline">Why
                                             Travellers</a></li>
                                     <li class=" ff_inter fw_400 fs_md  pt-3"><a href="#"
-                                            class="color_darkgray underline">Enterprice</a></li>
+                                            class="color_darkgray position-relative underline">Enterprice</a></li>
                                     <li class=" ff_inter fw_400 fs_md  pt-3"><a href="#"
-                                            class="color_darkgray underline">Customer
+                                            class="color_darkgray position-relative underline">Customer
                                             Stories</a></li>
                                     <li class=" ff_inter fw_400 fs_md  pt-3"><a href="#"
-                                            class="color_darkgray underline">Instagram
+                                            class="color_darkgray position-relative underline">Instagram
                                             post</a></li>
                                 </ul>
                             </div>
@@ -560,27 +686,27 @@
                                 <ul class="p-0">
                                     <li class=" ff_inter fw_500 fs_xl color_darkblue m-0">Company</li>
                                     <li class=" ff_inter fw_400 fs_md  pt-4"><a href="#"
-                                            class="color_darkgray underline">Travelling</a></li>
+                                            class="color_darkgray position-relative underline">Travelling</a></li>
                                     <li class=" ff_inter fw_400 fs_md  pt-3"><a href="#"
-                                            class="color_darkgray underline">About
+                                            class="color_darkgray position-relative underline">About
                                             Locato</a> </li>
                                     <li class=" ff_inter fw_400 fs_md  pt-3"><a href="#"
-                                            class="color_darkgray underline">Success</a>
+                                            class="color_darkgray position-relative underline">Success</a>
                                     </li>
                                     <li class=" ff_inter fw_400 fs_md  pt-3"><a href="#"
-                                            class="color_darkgray underline">Information</a></li>
+                                            class="color_darkgray position-relative underline">Information</a></li>
                                 </ul>
                             </div>
                             <div class="col-sm-3 col-6 pt-sm-0 pt-4">
                                 <ul class="p-0">
                                     <li class=" ff_inter fw_500 fs_xl color_darkblue m-0">Get App</li>
                                     <li class=" ff_inter fw_400 fs_md  pt-4"><a href="#"
-                                            class="color_darkgray underline">App
+                                            class="color_darkgray position-relative underline">App
                                             Store</a></li>
                                     <li class=" ff_inter fw_400 fs_md  pt-3"><a href="#"
-                                            class="color_darkgray underline">Google
+                                            class="color_darkgray position-relative underline">Google
                                             Play Store</a></li>
-    
+
                                 </ul>
                             </div>
                         </div>
@@ -588,7 +714,7 @@
                 </div>
             </div>
         </div>
-    
+
     </section>
 
 
@@ -677,6 +803,7 @@
             slidesToScroll: 1,
             nextArrow: ".next1",
             prevArrow: ".back1",
+            variableWidth: true,
             responsive: [
                 {
                     breakpoint: 1200,
@@ -697,6 +824,36 @@
                 },
             ]
         });
+    </script>
+    <script>
+        $('.single-item').slick({
+            nextArrow: ".next2",
+            prevArrow: ".back2",
+        });
+    </script>
+    <script>
+
+        const topbtn = document.getElementById('topbtn');
+
+
+        window.onscroll = function () { topscroll() };
+
+        function topscroll() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                topbtn.style.display = "block";
+            }
+            else {
+                topbtn.style.display = "none";
+            }
+        }
+
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
     </script>
     <script>
         function shownav() {

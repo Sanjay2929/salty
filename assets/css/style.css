@@ -105,15 +105,15 @@
     content: '';
     position: absolute;
     background: var(--clr-orange);
-    height: 3px;
+    height: 2px;
     width: 0px;
-    bottom: 0px;
+    bottom: -3px;
     left: 0;
     transition: all 0.5s linear;
 }
 
 .underline:hover::after {
-    width: 100%;
+    width: 20px;
 }
 
 .underline:hover {
@@ -145,7 +145,9 @@
 .w_54 {
     width: 54px;
 }
-
+.mw{
+    max-width: 1600px;
+}
 .max_w_500 {
     max-width: 500px;
 }
@@ -156,6 +158,19 @@
 .br_30{
         border-radius: 30px;
 }
+.br_5{
+    border-radius: 5px !important;
+}
+
+.backToTop{
+    right: 30px;
+    bottom: 30px;
+    display: none;
+}
+.backToTop:hover path {
+    stroke: var(--clr-orange);
+}
+
 @media (max-width:476px) {
     .w_230_xsm{
         width: 230px;
